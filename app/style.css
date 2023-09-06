@@ -4,8 +4,8 @@
     margin: 0px;
     padding-left: 0px;
     color: #A2A9CB;
-    /* font-family: 'Macondo', cursive;
-    font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Macondo', cursive; */
+    /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Poppins', sans-serif;
     
     
@@ -18,14 +18,15 @@ h1 {
 
 /* Body main container */
 .main-wrapper {
-    display: grid;
     padding: 12px;   
     border-radius: 15px;
 }
 
+
 /* course content left sidebar Heading*/
 .course-wrap {
-    padding: 40px 20px 0px 35px  ;
+    float: left;
+    padding: 40px 20px 0px 35px;
     background-color: #F4F6FF;
     border-radius: 15px;
 }
@@ -58,6 +59,7 @@ h1 {
 /* course content left sidebar content */
 .heading {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .slide-icon {
@@ -135,6 +137,7 @@ h1 {
 
 .blackText {
     color: #000 !important;
+    text-align: center;
 }
 .enrolled-students {
     margin-left: 10px;
@@ -171,10 +174,51 @@ h1 {
     width: 40px;
 }
 /* My learning sidebar right */
-.learning-wrap {
 
+.learning-wrap {
+    display: flow-root;  
+    padding: 30px; 
 }
 
-.planning-wrap {
+.icon-layout img{
+    width: 40px;
+    height: 40px;
+}
 
+.profile-layout {
+    display: inline-flex;
+}
+.profile-name {
+    display: block;
+}
+.profile-layout img{
+    width: 50px;
+    height: 50px;
+}
+/* Learning content */
+.learning-content {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.learning-icon {
+    width: 30px;
+    height: 30px;
+}
+/* Planning division */
+.planning-wrap {
+    display: flow-root;  
+    padding: 30px; 
+}
+
+.plan-content div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.blueline:nth-child(1) {
+    border-bottom: 3px solid #0068FF;
 }
