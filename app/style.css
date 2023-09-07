@@ -16,6 +16,9 @@ h1 {
     color: #24243A;
 }
 
+u {
+    color: #000;
+}
 /* Body main container */
 .main-wrapper {
     padding: 12px;   
@@ -131,7 +134,7 @@ h1 {
     
 }
 
-.data h3,p {
+.inline-with-icon h3,p {
     color: #fff;   
 }
 
@@ -197,16 +200,59 @@ h1 {
 }
 /* Learning content */
 .learning-content {
-    display: flex;
-    justify-content: center;
+    display: block; 
     
 }
 
+.content-card {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .learning-icon {
-    width: 30px;
-    height: 30px;
+    display: flex;
+    align-items: center;
 }
+.learning-icon img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #F4F6FF;
+    border-radius: 20px;
+}
+
+.learning-topic {
+    padding: 0px 20px;
+}
+.content-card h3{
+    color: #000;
+}
+
+.learning-topic p{
+    color: #A2A9CB;
+}
+
+.circle-progress {
+    width: 50px;
+    height: 50px;
+    color: #000;
+    border: 4px solid #ED7071;
+    border-radius: 50%;
+}
+.center {
+    text-align: center;
+    padding-top: 10px;
+}
+.blue {
+    border: 5px solid #0068FF;
+}
+
+.pink {
+    border: 5px solid #CF74FF;
+}
+
 /* Planning division */
 .planning-wrap {
     display: flow-root;  
@@ -215,10 +261,14 @@ h1 {
 
 .plan-content div{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 
-.blueline:nth-child(1) {
-    border-bottom: 3px solid #0068FF;
+@media only screen and (max-width: 1200px) {
+    .learning-wrap{
+        float: left;
+    }
+    .planning-wrap{
+        float: left;
+    }
 }
